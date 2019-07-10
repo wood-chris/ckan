@@ -1,5 +1,3 @@
-:orphan:
-
 CKAN uses Solr_ as its search platform, and uses a customized Solr schema file
 that takes into account CKAN's specific search needs. Now that we have CKAN
 installed, we need to install and configure Solr.
@@ -25,6 +23,8 @@ installed, we need to install and configure Solr.
     If CKAN is not installed on the same machine as Jetty/Solr you will need to
     change it to the relevant host or to 0.0.0.0 (and probably set up your firewall
     accordingly).
+
+#. Uncomment ``#solr_url = http://127.0.0.1:8983/solr`` (line #80) in ``development.ini``
 
    Start or restart the Jetty server.
 
